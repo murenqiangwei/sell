@@ -24,14 +24,14 @@ public class ProductCategoryRepositoryTest {
     @Test
     public void findOneTest() {
         //jdk8新特性：在用Repository实体查询是总是提示要java.util.Optional
-        ProductCategory productCategory = repository.findById(1).get();
+        ProductCategory productCategory = repository.findById(2).get();//findById里的数字是categoryId
         System.out.println(productCategory.toString());
     }
 
     @Test
     @Transactional//测试完成后数据库是干净的，回滚
     public void saveTest() {
-        ProductCategory productCategory = new ProductCategory("男生最爱",4);
+        ProductCategory productCategory = new ProductCategory("女生最爱",3);
         ProductCategory result = repository.save(productCategory);
         Assert.assertNotNull(result);
 //        Assert.assertNotEquals(null, result);

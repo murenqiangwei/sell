@@ -9,9 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import java.util.Date;
 
-@Entity
+@Entity//数据库映射为对象
 @DynamicUpdate//动态更新时间
-@Data//lombok插件的使用，Getter、Setter等的使用
+@Data//lombok插件的使用，Getter、Setter、toString等的使用
 public class ProductCategory {
 
     /** 类目id. */

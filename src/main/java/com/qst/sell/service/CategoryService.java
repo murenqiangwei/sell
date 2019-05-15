@@ -10,11 +10,11 @@ import java.util.List;
 public interface CategoryService {
     //后台管理：
     //查询一条记录
-    ProductCategory findById(Integer categoryId);
+    ProductCategory findOne(Integer categoryId);
     //查询所有
     List<ProductCategory> findAll();
 
-    //卖家端用到的：
+    //买家端用到的：
     //通过Type来查
     List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList);
     //新增和更新

@@ -22,7 +22,7 @@ public class CategoryServiceImplTest {
 
     @Test
     public void findById() throws Exception{
-        ProductCategory productCategory = categoryService.findById(1);
+        ProductCategory productCategory = categoryService.findOne(1);
         Assert.assertEquals(new Integer(1), productCategory.getCategoryId());
     }
 
@@ -40,7 +40,7 @@ public class CategoryServiceImplTest {
 
     @Test
     public void save() throws Exception{
-        ProductCategory productCategory = new ProductCategory("男生专享", 10);
+        ProductCategory productCategory = new ProductCategory("男生最爱", 2);
         ProductCategory result = categoryService.save(productCategory);
         Assert.assertNotNull(result);
     }
