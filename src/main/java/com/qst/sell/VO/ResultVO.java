@@ -1,5 +1,6 @@
 package com.qst.sell.VO;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 /*
 http请求返回的最外层对象
