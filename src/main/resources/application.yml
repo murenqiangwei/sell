@@ -14,3 +14,8 @@ server:
 #  hibernate:
 #    naming:
 #      physical-strategy: com.XX.XX.common.MySQLUpperCaseStrategy
+
+wechat:
+  mpAppId: wxe718c10efe1b0bec
+  mpAppSecret: 08979da20346a60925b05fdee9d4ec8c
+
